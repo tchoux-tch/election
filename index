@@ -17,11 +17,11 @@ body {
   max-width: 900px;
 }
 
+/* 타이포 */
 h1 {
   font-size: 64px;
   line-height: 1.2;
   margin-bottom: 20px;
-  font-weight: 700;
 }
 
 .desc {
@@ -30,10 +30,7 @@ h1 {
   margin-bottom: 40px;
 }
 
-.highlight {
-  color: #6366f1; /* 살짝 보라 느낌 포인트 */
-}
-
+/* 버튼 */
 .btn {
   padding: 14px 28px;
   background: #111;
@@ -44,36 +41,117 @@ h1 {
   cursor: pointer;
 }
 
-.btn:hover {
-  background: #333;
+/* 이미지 */
+.main-img {
+  width: 100%;
+  max-width: 700px;
+  margin-top: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* before-after */
+.compare {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.box {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 320px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.box img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.label {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.before { color: #888; }
+.after { color: #6366f1; }
+
+.arrow {
+  font-size: 28px;
+  color: #999;
+}
+
+/* 모바일 대응 */
+@media (max-width: 768px) {
+  .section {
+    padding: 80px 20px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .compare {
+    flex-direction: column;
+  }
+
+  .arrow {
+    transform: rotate(90deg);
+  }
 }
 </style>
 </head>
 
 <body>
 
+<!-- 1. 메인 -->
 <div class="section">
-  <h1>부반장?<br>굳이 필요 없다면</h1>
+  <h1>이미<br>하고 있음</h1>
   <div class="desc">
-    그 역할, 내가 직접 만들어서 쓰면 됨.
-  </div>
-  <button class="btn">공약 보기</button>
-</div>
-
-<div class="section">
-  <h1><span class="highlight">자료</span>는 내가 만든다</h1>
-  <div class="desc">
-    공강 모의고사 해설<br>
-    시험범위 정리<br>
-    직접 만든 변형 문제 제공
+    말이 아니라 결과로 보여줌.
   </div>
 </div>
 
+<!-- 2. 해설지 -->
 <div class="section">
-  <h1>귀찮은 건<br>내가 다 처리함</h1>
+  <h1>해설지,<br>이미 있음</h1>
   <div class="desc">
-    전달, 정리, 공지<br>
-    맡기면 끝.
+    1학기 때 직접 만든 자료 일부.
+  </div>
+
+  <img src="images/sample1.png" class="main-img">
+  <img src="images/sample2.png" class="main-img">
+
+    <button class="btn">전체 보기</button>
+  </a>
+</div>
+
+<!-- 3. 변형문제 -->
+<div class="section">
+  <h1>문제,<br>이렇게 바꾼다</h1>
+
+  <div class="desc">
+    시험 대비용 변형 문제.
+  </div>
+
+  <div class="compare">
+    <div class="box">
+      <div class="label before">BEFORE</div>
+      <img src="images/before.png">
+    </div>
+
+    <div class="arrow">→</div>
+
+    <div class="box">
+      <div class="label after">AFTER</div>
+      <img src="images/after.png">
+    </div>
   </div>
 </div>
 
