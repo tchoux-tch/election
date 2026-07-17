@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>부반장 후보 OOO</title>
+
+<style>
+body {
+  margin: 0;
+  background: #EDEDED;
+  color: #111;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.section {
+  padding: 120px 80px;
+  max-width: 900px;
+}
+
+h1 {
+  font-size: 64px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.desc {
+  color: #555;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.highlight {
+  color: #6366f1; /* 살짝 보라 느낌 포인트 */
+}
+
+.btn {
+  padding: 14px 28px;
+  background: #111;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #333;
+}
+</style>
+</head>
+
+<body>
+
+<div class="section">
+  <h1>부반장?<br>굳이 필요 없다면</h1>
+  <div class="desc">
+    그 역할, 내가 직접 만들어서 쓰면 됨.
+  </div>
+  <button class="btn">공약 보기</button>
+</div>
+
+<div class="section">
+  <h1><span class="highlight">자료</span>는 내가 만든다</h1>
+  <div class="desc">
+    공강 모의고사 해설<br>
+    시험범위 정리<br>
+    직접 만든 변형 문제 제공
+  </div>
+</div>
+
+<div class="section">
+  <h1>귀찮은 건<br>내가 다 처리함</h1>
+  <div class="desc">
+    전달, 정리, 공지<br>
+    맡기면 끝.
+  </div>
+</div>
+
+</body>
+</html>
