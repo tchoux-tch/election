@@ -140,18 +140,17 @@ h1 {
     시험 대비용 변형 문제.
   </div>
 
-  <div class="compare">
-    <div class="box">
-      <div class="label before">BEFORE</div>
-      <img src="images/before.png">
-    </div>
+<div class="compare">
+  <div class="box">
+    <div class="label before">BEFORE</div>
+    <img src="images/before.png">
+  </div>
 
-    <div class="arrow">→</div>
+  <div class="arrow">→</div>
 
-    <div class="box">
-      <div class="label after">AFTER</div>
-      <img src="images/after.png">
-    </div>
+  <div class="box">
+    <div class="label after">AFTER</div>
+    <img src="images/after.png">
   </div>
 </div>
 
