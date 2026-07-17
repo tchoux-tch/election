@@ -12,19 +12,25 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
+
+/* 전체 섹션 */
 .section {
   padding: 120px 0;
 }
 
+
+/* 내용 영역 */
 .section-inner {
   max-width: 900px;
-  margin-left: 80px;
-  padding: 0;
+  margin-left: max(80px, calc((100vw - 900px) / 2));
 }
 
+
+/* 강조 섹션 */
 .section.highlight {
   background: #DCDCDC;
 }
+
 
 /* 타이포 */
 h1 {
@@ -32,7 +38,7 @@ h1 {
   line-height: 1.2;
   margin-bottom: 20px;
 }
-  
+
 h2 {
   font-size: 48px;
   line-height: 1.2;
@@ -45,6 +51,7 @@ h2 {
   margin-bottom: 40px;
 }
 
+
 /* 버튼 */
 .btn {
   padding: 14px 28px;
@@ -56,6 +63,7 @@ h2 {
   cursor: pointer;
 }
 
+
 /* 이미지 */
 .main-img {
   width: 100%;
@@ -65,7 +73,8 @@ h2 {
   box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
-/* before-after */
+
+/* BEFORE AFTER */
 .compare {
   display: flex;
   align-items: center;
@@ -88,18 +97,56 @@ h2 {
   border-radius: 6px;
 }
 
+
 .label {
   font-size: 12px;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-.before { color: #888; }
-.after { color: #6366f1; }
+.before {
+  color: #888;
+}
+
+.after {
+  color: #6366f1;
+}
+
 
 .arrow {
   font-size: 28px;
   color: #999;
+}
+
+
+/* 모바일 */
+@media (max-width: 768px) {
+
+  .section {
+    padding: 80px 0;
+  }
+
+  .section-inner {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  .compare {
+    flex-direction: column;
+  }
+
+  .arrow {
+    transform: rotate(90deg);
+  }
+
 }
 
 /* 모바일 대응 */
@@ -127,9 +174,11 @@ h2 {
 
 <!-- 1. 메인 -->
 <div class="section">
-  <h1>기호 n번 조우찬<br>이미 실천하고 있습니다</h1>
-  <div class="desc">
-    지금까지 해온 걸로 보여드립니다.
+  <div class="section-inner">
+    <h1>기호 n번 조우찬<br>이미 실천하고 있습니다</h1>
+    <div class="desc">
+      지금까지 해온 걸로 보여드립니다.
+    </div>
   </div>
 </div>
 
@@ -145,60 +194,73 @@ h2 {
 </div>
 <!-- 2. 해설지 -->
 <div class="section">
-  <h2>해설지,<br>이미 실천하고 있습니다</h2>
-  <div class="desc">
-    1학기 때 직접 만든 자료 일부.
+  <div class="section-inner">
+    <h2>해설지,<br>이미 실천하고 있습니다</h2>
+
+    <div class="desc">
+      1학기 때 직접 만든 자료 일부.
+    </div>
+
+    <img src="공강.png" class="main-img">
   </div>
-
-  <img src="공강.png" class="main-img">
-
 </div>
 
 <!-- 3. 변형문제 -->
 <div class="section highlight">
-  <h2>문제,<br>이렇게 바꾼다</h2>
+  <div class="section-inner">
 
-  <div class="desc">
-    시험 대비용 변형 문제.
-  </div>
+    <h2>문제,<br>이렇게 바꾼다</h2>
 
-<div class="compare">
-  <div class="box">
-    <div class="label before">BEFORE</div>
-    <img src="before.png">
-  </div>
+    <div class="desc">
+      시험 대비용 변형 문제.
+    </div>
 
-  <div class="arrow">→</div>
+    <div class="compare">
 
-  <div class="box">
-    <div class="label after">AFTER</div>
-    <img src="after.png">
-  </div>
-</div>
+      <div class="box">
+        <div class="label before">BEFORE</div>
+        <img src="before.png">
+      </div>
 
-<div class="section">
-  <h2>
-  앞으로도<br>
-  계속하겠습니다
-  </h2>
-  
-  <div class="desc">
-  이미 해왔던 것을,
-  우리 반 모두를 위해 이어가겠습니다.
+      <div class="arrow">→</div>
+
+      <div class="box">
+        <div class="label after">AFTER</div>
+        <img src="after.png">
+      </div>
+
+    </div>
+
   </div>
 </div>
 
 <div class="section">
-  <h2>
-  약속하는 후보가 아닌<br>이미 행동한 후보.<br>기호 n번 조우찬
-  </h2>
-  <div class="desc">
-  이미 해왔던 것을,
-  우리 반 모두를 위해 이어가겠습니다.
+  <div class="section-inner">
+    <h2>
+    앞으로도<br>
+    계속하겠습니다
+    </h2>
+
+    <div class="desc">
+      이미 해왔던 것을<br>
+      우리 반 모두를 위해 이어가겠습니다.
+    </div>
   </div>
-  <h1>
-  당신의 한 표가 필요합니다. 🗳️
-  </h1>
+</div>
+
+
+<div class="section highlight">
+  <div class="section-inner">
+    <h2>
+      약속하는 후보가 아닌<br>
+      이미 행동한 후보.<br>
+      기호 n번 조우찬
+    </h2>
+
+    <h1>
+      당신의 한 표가 필요합니다.🗳️
+    </h1>
+  </div>
 </div>
   
 
