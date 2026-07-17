@@ -125,8 +125,7 @@ h1 {
     1학기 때 직접 만든 자료 일부.
   </div>
 
-  <img src="images/sample1.png" class="main-img">
-  <img src="images/sample2.png" class="main-img">
+  <img src="공강.png" class="main-img">
 
     <button class="btn">전체 보기</button>
   </a>
@@ -143,14 +142,14 @@ h1 {
 <div class="compare">
   <div class="box">
     <div class="label before">BEFORE</div>
-    <img src="images/before.png">
+    <img src="before.png">
   </div>
 
   <div class="arrow">→</div>
 
   <div class="box">
     <div class="label after">AFTER</div>
-    <img src="images/after.png">
+    <img src="after.png">
   </div>
 </div>
 
